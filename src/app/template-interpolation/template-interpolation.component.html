@@ -1,0 +1,13 @@
+<!-- <ul>
+  <li>interpolate simple expression ->{{1+2*2}}</li>
+  <li>interpolate class value as HTML content: ->{{name.toUpperCase()}}</li>
+  <li class="{{note}}">interpolate class value as HTML attribute</li>
+  <li (class)="note">interpolate class value as HTML attribute</li>
+  <h2 [style.fontSize]="fontSizes['200']">Heading</h2>
+  <p [style.color]="col">PPP</p>
+</ul> -->
+
+<!-- <input #listItem (keyup)="showInputText($event)" type="text" name=""> -->
+<input #listItem type="text" name="">
+<button (click)="addToList(listItem)">Output</button>
+<div class="output">{{inputText}}</div>

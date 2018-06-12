@@ -1,0 +1,37 @@
+<ul>
+    <style type="text/css">
+        .output {
+            margin-top: 2em;
+            margin-bottom: 5em;
+            border: 5px solid #999;
+        }
+    </style>
+    <!-- <li>interpolate simple expression ->{{1+2*2}}</li>
+    <li>interpolate class value as HTML content: ->{{name.toUpperCase()}}</li>
+    <li class="{{note}}">interpolate class value as HTML attribute</li> -->
+    <h2>Heading</h2>
+    <input type="text">
+    <button onclick="showInputText()">Output</button>
+    <div class="output"></div>
+    <p [style.color]="col">PPP</p>
+    <script type="text/javascript">
+        var inputNode = document.querySelector("input");
+        var outputNode = document.querySelector("div");
+        
+        function showInputText() {
+            outputNode.innerHTML = inputNode.value;
+        }
+
+      var size = "100px";
+  
+      fontSizes = {
+        "400":"400px",
+        "200":"200px"
+      }
+  
+      var test = document.querySelector("h2");
+  
+      test.style.fontSize = fontSizes["200"];
+    </script>
+  </ul>
+  

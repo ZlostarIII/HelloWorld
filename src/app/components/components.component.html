@@ -1,0 +1,3 @@
+<p *ngIf="isValid; then thenBlock else elseBlock">here is ignored</p>
+<ng-template #thenBlock>thenBlock: isValid == true</ng-template>
+<ng-template #elseBlock>elseBlock: isValid == false</ng-template>
